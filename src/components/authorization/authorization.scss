@@ -1,0 +1,54 @@
+
+.modal {
+    position: relative;
+    top: 200px;
+    left: 35%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 464px;
+    border-radius: 10px;
+    z-index: 99;
+    h1 {
+        position: absolute;
+        top: -25px;
+        right: 40px;
+        font-size: 50px;
+        font-weight: 250;
+    }
+    &--top {
+        width: 510px;
+        height: 80px;
+        background: linear-gradient(80deg, #28B446,  #02FF70) left;
+        border: none;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+    &--bottom {
+        width: 510px;
+        height: 80px;
+        background: linear-gradient(80deg, #28B446,  #02FF70) left;
+        border: none;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}
+.bg-modal {
+    background: C4C4C4;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
