@@ -2,15 +2,16 @@ import React from 'react';
 import './App.scss';
 import Header from "./components/header/Header";
 import Authorization from './components/authorization/Authorization';
+import Products from "./components/Products/Products";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <h1>kjhgvfc</h1>
-      <Authorization/>
-    </div>
-  );
+        <div className="App">
+            <Header/>
+            <Authorization/>
+            <Products/>
+        </div>
+    );
 }
 
 export default App;

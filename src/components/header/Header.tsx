@@ -14,15 +14,19 @@ const Header = () => {
                     <div className="header">
                         <img src={logo} alt=""/>
                         <div className="header-nav">
-                            <BsBoxSeam/>
-                            <BsBell/>
-                            <SlBasket/>
-                        </div>
+                            <div className="header-nav-icons">
+                                <BsBoxSeam className='header-nav-icon'/>
+                                <BsBell className='header-nav-icon'/>
+                                <SlBasket className='header-nav-icon'/>
+                            </div>
+                            </div>
                         <div className="header-nav">
-                            <AiOutlineGlobal/>
-                            <LiaEnvelopeSolid/>
-                            <AiOutlineHeart/>
-                            <GoPerson/>
+                            <div className="header-nav-icons1">
+                                <AiOutlineGlobal className='header-nav-icon'/>
+                                <LiaEnvelopeSolid className='header-nav-icon'/>
+                                <AiOutlineHeart className='header-nav-icon'/>
+                                <GoPerson className='header-nav-icon'/>
+                            </div>
                         </div>
                     </div>
                 </div>
