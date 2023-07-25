@@ -5,12 +5,6 @@ import Authorization from './components/authorization/Authorization';
 import Products from "./components/Products/Products";
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Authorization/>
-    </div>
-  );
     return (
         <div className="App">
             <Header/>
