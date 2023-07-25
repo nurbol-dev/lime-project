@@ -1,0 +1,154 @@
+.login {
+  position: relative;
+  top: 10%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  height: 583px;
+  background: #fff;
+  padding: 40px 40px;
+  border-radius: 10px;
+  z-index: 99;
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #181818;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #181818;
+    margin-top: 15px;
+  }
+  .p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #868889;
+    margin: 10px 0 25px 0;
+  }
+  &--email {
+    width: 529px;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid #868889;
+    margin-bottom: 10px;
+    img {
+      margin: 0 30px;
+    }
+    input {
+      color: #868889;
+      font-size: 24px;
+      background: white;
+      border-radius: 10px;
+      width: 440px;
+      height: 80px;
+      outline: none;
+      border: none;
+    }
+  }
+  &--password {
+    width: 529px;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid #868889;
+    h5 {
+      color: #868889;
+      margin: 0 30px;
+      font-size: 30px;
+      font-weight: 100;
+    }
+    span {
+      cursor: pointer;
+      color: #868889;
+      margin: 0 30px;
+      font-size: 30px;
+      font-weight: 100;
+    }
+    input {
+      color: #868889;
+      font-size: 24px;
+      background: white;
+      border-radius: 10px;
+      width: 440px;
+      height: 80px;
+      outline: none;
+      border: none;
+    }
+  }
+  &--flex {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__remember {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        color: #868889;
+        font-weight: 500;
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      &--dark {
+        position: relative;
+        width: 38px;
+        height: 21px;
+        border: 2px solid #868889;
+        border-radius: 20px;
+        &__top {
+          cursor: pointer;
+          transition: 0.4s ease-in-out;
+          position: absolute;
+          left: -2px;
+          top: -2px;
+          width: 21px;
+          height: 21px;
+          border: 2px solid #868889;
+          border-radius: 20px;
+        }
+      }
+    }
+    h6 {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 20px;
+      color: #407ec7;
+    }
+  }
+  button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 80px;
+    background: linear-gradient(80deg, #28b446, #02ff70) left;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+  h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    span {
+      font-weight: 500;
+      color: #407ec7;
+      cursor: pointer;
+    }
+  }
+}
+.bg-modal {
+  background: #dededeb2;
+  position: fixed;
+  inset: 0;
+}

@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <h1>kjhgvfc</h1>
       <Authorization/>
     </div>
   );
