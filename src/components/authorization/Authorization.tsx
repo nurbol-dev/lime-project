@@ -1,20 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./authorization.scss";
+import Login from "./login/Login";
 
 const Authorization = () => {
+  const [login, setLogin] = useState<boolean>(false);
+  const [auth, setAuth] = useState<boolean>(false);
+
   return (
-    <div>
-      <div className="modal">
-        <h1>&times;</h1>
+    <>
+    {
+    login ?  <Login/> :  <div style={{
+      display: auth ? "none" : "block"
+    }}>
+      <div  className="modal">
+        <h1 onClick={() => setAuth(true)}>&times;</h1>
         <div>
-          <button className="modal--top">Sign up</button>
+          <button  className="modal--top">Sign up</button>
         </div>
         <div>
-          <button className="modal--bottom">Log in</button>
+          <button onClick={() => setLogin(true)} className="modal--bottom">Log in</button>
         </div>
       </div>
-      <div className="bg-modal"></div>
-    </div>  
+      <div onClick={() => setAuth(true)} className="bg-modal"></div>
+    </div>
+    }
+    </>
   );
 };
 
