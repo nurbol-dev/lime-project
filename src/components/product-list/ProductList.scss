@@ -1,0 +1,30 @@
+#productlist{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 20%;
+  .productlist-content{
+    background-color: #FFFFFF;
+    width: 380px;
+    .productlist-block{
+
+      .productlist-card{
+        display: flex;
+        align-items: center;
+        border: 1px solid #868889;
+        border-radius: 10px;
+        max-width: 284px;
+        height: 60px;
+        justify-content: flex-start;
+        margin: 20px 0;
+        img{
+          margin: 9px 0 7px 12px;
+        }
+        p{
+          margin-left: 20px;
+        }
+
+      }
+    }
+  }
+}

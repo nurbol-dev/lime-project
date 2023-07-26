@@ -3,7 +3,8 @@ import {ProductsTypes} from "../../types/ProductsTypes";
 
 
 const initialState: ProductsTypes = {
-    products: []
+    products: [],
+    productCard: false,
 }
 
 export const ProductSlice = createSlice({
@@ -12,9 +13,13 @@ export const ProductSlice = createSlice({
     reducers: {
         getProduct(state, {payload}) {
             state.products = payload
+        },
+        getProductCard(state, action) {
+            state.productCard = action.payload
         }
+
     }
 })
 
 export default ProductSlice.reducer
-export const {getProduct} = ProductSlice.actions
+export const {getProduct,getProductCard} = ProductSlice.actions

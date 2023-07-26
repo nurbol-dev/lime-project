@@ -22,7 +22,7 @@ const Products = () => {
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 3,
-        variableWidth: true
+        variableWidth: true,
     };
 
     return (
