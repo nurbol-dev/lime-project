@@ -1,11 +1,11 @@
 .data {
-  margin: 0 0 0 150px;
+  margin: 0 0 0 250px;
 
   .products {
     width: 1140px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 }
