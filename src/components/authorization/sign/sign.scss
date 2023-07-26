@@ -1,0 +1,60 @@
+.sign {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  background: #fff;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
+  padding: 40px 40px;
+  width: 550px;
+  height: 600px;
+  border-radius: 10px;
+  z-index: 99;
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: #181818;
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+  }
+  p {
+    margin: 5px 0 30px 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #868889;
+  }
+  h5 {
+    text-align: center;
+    color: #868889;
+    margin: 0 30px;
+    font-size: 20px;
+    font-weight: 100;
+    span {
+        cursor: pointer;
+        font-weight: 300;
+        color: #407EC7;
+    }
+  }
+  
+  button {
+    margin: 25px 0;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 530px;
+    height: 80px;
+    background: linear-gradient(80deg, #28b446, #02ff70) left;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+}

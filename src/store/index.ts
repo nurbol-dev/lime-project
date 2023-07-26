@@ -1,9 +1,11 @@
+import  AuthSlice  from './reducers/AuthSlice';
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import ProductSlice from "./reducers/ProductSlice";
 
 
 const rootReducer = combineReducers({
     ProductSlice,
+    AuthSlice
 })
 
 export const setUpStore = () => {
