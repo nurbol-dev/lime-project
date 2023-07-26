@@ -22,6 +22,7 @@ const Confirm = () => {
       }}>
         <form>
         <div className="confirm">
+          <div className="confirm--title">
                 <h1>Enter 4 digit code</h1>
                 <p>A four-digit code should have come to <br /> your email address that you indicated.</p>
                 <ul>
@@ -30,10 +31,11 @@ const Confirm = () => {
                     <li></li>
                     <li></li>
                 </ul>
-                <div className="confirm--btns">
+                <div className="confirm--title__btns">
                     <button onClick={() => setConfirm(true)}>Confirm</button>
                     <button onClick={() => setForgot(true)}>Cancel</button>
                 </div>
+          </div>
         </div>
         </form>
       <div onClick={backReturn} className="bg-modal"></div>
