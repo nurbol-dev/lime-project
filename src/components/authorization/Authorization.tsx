@@ -5,6 +5,7 @@ import Sign from "./sign/Sign";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { authChange } from "../../store/reducers/AuthSlice";
 
+
 const Authorization = () => {
   const dispatch = useAppDispatch();
   const { back } = useAppSelector((s) => s.AuthSlice);
@@ -24,9 +25,9 @@ const Authorization = () => {
         <div
           style={{
             display: back ? "none" : "block",
-          }}
-        >
+          }}>
           <div className="modal">
+            
             <h1 onClick={backReturn}>&times;</h1>
             <div>
               <button onClick={() => setSign(true)} className="modal--top">
