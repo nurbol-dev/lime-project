@@ -1,11 +1,14 @@
 import  AuthSlice  from './reducers/AuthSlice';
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import ProductSlice from "./reducers/ProductSlice";
+import ProductBasket from "./reducers/ProductBasket";
+import ProductFavorite from "./reducers/ProductFavorite";
 
 
 const rootReducer = combineReducers({
     ProductSlice,
-    AuthSlice
+    ProductBasket,
+    ProductFavorite
 })
 
 export const setUpStore = () => {

@@ -1,14 +1,17 @@
 import React, {useEffect} from 'react';
 import {useAppDispatch, useAppSelector} from "../../hooks";
-import {getProductREC} from "../../store/actions/ProductActions";
+import {getProductREC, productModalREC} from "../../store/actions/ProductActions";
 import {data} from "../../faceBackend/backend";
 import ProductCard from "./ProductCard/ProductCard";
 import "./Product.scss"
 import Slider from "react-slick";
 import banner from "../../assets/img/image 33.png"
+import BasketREC from "./ProductDetails";
+import ProductDetails from "./ProductDetails";
 
 const Products = () => {
-    const {products} = useAppSelector(s => s.ProductSlice)
+    const {basket} = useAppSelector(s => s.ProductBasket)
+    const {products, productModal} = useAppSelector(s => s.ProductSlice)
     const dispatch = useAppDispatch()
 
     useEffect(() => {
@@ -20,13 +23,15 @@ const Products = () => {
         dots: false,
         infinite: false,
         centerMode: true,
-        slidesToShow: 1,
         slidesToScroll: 3,
         variableWidth: true,
     };
 
     return (
         <div className="data">
+            <ProductDetails/>
+            <div className="blur" onClick={() => dispatch(productModalREC(productModal))}
+                 style={{display: productModal ? "flex" : "none"}}></div>
             <div className="container">
                 <div>
                     <Slider {...settings}>

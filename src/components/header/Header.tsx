@@ -6,15 +6,18 @@ import {SlBasket} from "react-icons/sl";
 import {AiOutlineGlobal, AiOutlineHeart} from "react-icons/ai";
 import {LiaEnvelopeSolid} from "react-icons/lia";
 import {GoPerson} from "react-icons/go";
+import Basket from "../Basket/Basket";
 import {useAppDispatch, useAppSelector} from "../../hooks";
 import {getProductCard} from "../../store/reducers/ProductSlice";
+
+
 const Header = () => {
     const dispatch = useAppDispatch()
     const {productCard} = useAppSelector(state => state.ProductSlice)
-
     const getProductList = ()=> {
         dispatch(getProductCard(!productCard))
     }
+
     return (
         <>
             <div id='header'>
@@ -25,7 +28,7 @@ const Header = () => {
                             <div className="header-nav-icons">
                                 <BsBoxSeam onClick={()=> getProductList()} className='header-nav-icon'/>
                                 <BsBell className='header-nav-icon'/>
-                                <SlBasket className='header-nav-icon'/>
+                                <Basket/>
                             </div>
                             </div>
                         <div className="header-nav">
