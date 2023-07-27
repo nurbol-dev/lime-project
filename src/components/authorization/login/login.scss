@@ -13,6 +13,14 @@
   &--title {
     width: 511px;
     height: 543px;
+    &__row  {
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      left: 40px;
+      font-size: 40px;
+      font-weight: 250;
+    }
     button {
       border-radius: 10px;
       width: 509px;
