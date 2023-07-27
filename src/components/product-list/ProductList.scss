@@ -1,13 +1,24 @@
 #productlist{
-  position: absolute;
+  position: fixed;
   z-index: 10;
-  top: 0;
-  left: 20%;
+  top: 15%;
+  left: 15.7%;
   .productlist-content{
     background-color: #FFFFFF;
     width: 380px;
+    height: 562px;
+    border-radius: 10px;
     .productlist-block{
-
+      width: 300px;
+      text-align: center;
+      margin: 0 auto;
+      h2{
+        padding-top: 40px ;
+        color: #181818;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0.32px;
+      }
       .productlist-card{
         display: flex;
         align-items: center;
@@ -22,6 +33,10 @@
         }
         p{
           margin-left: 20px;
+          color: #181818;
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: 0.2px;
         }
 
       }
