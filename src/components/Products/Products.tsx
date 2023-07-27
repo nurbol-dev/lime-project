@@ -6,8 +6,7 @@ import ProductCard from "./ProductCard/ProductCard";
 import "./Product.scss"
 import Slider from "react-slick";
 import banner from "../../assets/img/image 33.png"
-import BasketREC from "./ProductDetails";
-import ProductDetails from "./ProductDetails";
+import ProductDetails from "./ProductDetails/ProductDetails";
 
 const Products = () => {
     const {basket} = useAppSelector(s => s.ProductBasket)

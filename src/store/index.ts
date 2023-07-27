@@ -8,7 +8,8 @@ import ProductFavorite from "./reducers/ProductFavorite";
 const rootReducer = combineReducers({
     ProductSlice,
     ProductBasket,
-    ProductFavorite
+    ProductFavorite,
+    AuthSlice
 })
 
 export const setUpStore = () => {

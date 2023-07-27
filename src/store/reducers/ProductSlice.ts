@@ -5,7 +5,7 @@ import {ProductsTypes} from "../../types/ProductsTypes";
 const initialState: ProductsTypes = {
     products: [],
     productsDetails: {},
-    productModal: false
+    productModal: false,
     productCard: false,
 }
 
