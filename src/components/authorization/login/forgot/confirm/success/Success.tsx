@@ -1,20 +1,28 @@
 import React, { useState } from 'react';
 import "./success.scss"
 import correct from "../../../../../../assets/img/correct.svg"
+import { useAppDispatch, useAppSelector } from '../../../../../../hooks';
+import { authChange } from '../../../../../../store/reducers/AuthSlice';
 const Success = () => {
-    const [auth, setAuth] = useState<boolean>(false);
+    const dispatch = useAppDispatch()
+  const {back} = useAppSelector(s => s.AuthSlice)
+  const backReturn = () => {
+    dispatch(authChange(true))
+  }
 
     return (
         <div style={{
-            display: auth ? "none" : "block",
+            display: back ? "none" : "block",
           }}>
+            <form>
             <div className="success">
-            <h1 onClick={() => setAuth(true)}>&times;</h1>
+            <h1 onClick={backReturn}>&times;</h1>
                 <img src={correct} alt="" />
                 <h2>You have successfully <br /> restored your account!</h2>
-                <button onClick={() => setAuth(true)}>OK</button>
+                <button onClick={backReturn}>OK</button>
             </div>
-            <div onClick={() => setAuth(true)} className="bg-modal"></div>
+            <div onClick={backReturn} className="bg-modal"></div>
+        </form>
         </div>
     );
 };

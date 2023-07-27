@@ -6,6 +6,7 @@ const initialState: ProductsTypes = {
     products: [],
     productsDetails: {},
     productModal: false
+    productCard: false,
 }
 
 export const ProductSlice = createSlice({
@@ -21,8 +22,11 @@ export const ProductSlice = createSlice({
         productModals(state,{payload}) {
             state.productModal = payload
         },
+        getProductCard(state, action) {
+            state.productCard = action.payload
+        }
     }
 })
 
 export default ProductSlice.reducer
-export const {getProduct,ProductDetails,productModals} = ProductSlice.actions
+export const {getProduct,ProductDetails,productModals,getProductCard} = ProductSlice.actions

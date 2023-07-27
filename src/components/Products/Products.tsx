@@ -23,9 +23,8 @@ const Products = () => {
         dots: false,
         infinite: false,
         centerMode: true,
-        slidesToShow: 1,
-        slidesToScroll: 4,
-        variableWidth: true
+        slidesToScroll: 3,
+        variableWidth: true,
     };
 
     return (

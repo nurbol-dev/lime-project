@@ -1,6 +1,6 @@
 .modal {
-  position: relative;
-  top: 10%;
+  position: absolute;
+  top: 20%;
   left: 35%;
   background: #fff;
   display: flex;
@@ -11,6 +11,7 @@
   height: 464px;
   border-radius: 10px;
   z-index: 99;
+ 
   h1 {
     cursor: pointer;
     position: absolute;
@@ -20,34 +21,20 @@
     font-weight: 250;
   }
   &--top {
-    cursor: pointer;
     width: 510px;
     height: 80px;
     background: linear-gradient(80deg, #28b446, #02ff70) left;
-    border: none;
     font-weight: 600;
     text-align: center;
     color: white;
     font-size: 20px;
-    display: none;
-    position: relative;
-    top: 200px;
-    left: 35%;
-    background: red;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 600px;
-    height: 464px;
     border-radius: 10px;
-    margin-bottom: 40px;
   }
   &--bottom {
-    cursor: pointer;
+    margin-top: 40px;
     width: 510px;
     height: 80px;
     background: linear-gradient(80deg, #28b446, #02ff70) left;
-    border: none;
     font-weight: 600;
     text-align: center;
     color: white;
@@ -59,5 +46,6 @@
   background: #dededeb2;
   position: fixed;
   inset: 0;
+  z-index: 98;
 }
 

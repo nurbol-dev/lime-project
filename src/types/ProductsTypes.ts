@@ -4,4 +4,5 @@ export interface ProductsTypes {
     products: dataTypes[]
     productsDetails: Partial<dataTypes>
     productModal: boolean
+    productCard: boolean
 }

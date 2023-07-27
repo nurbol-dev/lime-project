@@ -1,44 +1,49 @@
 .forgot {
-  position: relative;
-  top: 10%;
+  position: absolute;
+  top: 20%;
   left: 35%;
   display: flex;
-  flex-direction: column;
-  width: 530px;
-  height: 503px;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 586px;
   background: #fff;
   padding: 40px 40px;
   border-radius: 10px;
   z-index: 99;
-  h1 {
-    color: #181818;
-    text-align: center;
-    font-weight: 700;
-    font-size: 32px;
-  }
-  p {
-    font-weight: 400;
-    font-size: 20px;
-    color:  #181818;
-    line-height: 30px;
-    margin: 25px 0 25px 0;
-  }
-  h4 {
-    color: #407EC7;
-    font-weight: 500;
-    font-size: 20px;
-    text-decoration-line: underline;
-    margin: 25px 0 30px 0   ;
-  }
-  button {
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    height: 80px;
-    background: linear-gradient(80deg, #28b446, #02ff70) left;
-    font-weight: 600;
-    font-size: 20px;
-    color: white;
+  &--title {
+    width: 511px;
+    height: 503px;
+    h1 {
+      letter-spacing: 5%;
+      color: #181818;
+      text-align: center;
+      font-weight: 700;
+      font-size: 32px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      color: #181818;
+      line-height: 30px;
+      margin: 30px 0;
+    }
+    h4 {
+      cursor: pointer;
+      color: #407ec7;
+      font-weight: 500;
+      font-size: 20px;
+      text-decoration-line: underline;
+      margin: 25px 0 30px 0;
+    }
+    button {
+      border-radius: 10px;
+      width: 509px;
+      height: 80px;
+      background: linear-gradient(80deg, #28b446, #02ff70) left;
+      font-weight: 600;
+      font-size: 20px;
+      color: white;
+    }
   }
 }

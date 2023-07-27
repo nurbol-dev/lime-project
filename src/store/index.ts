@@ -1,3 +1,4 @@
+import  AuthSlice  from './reducers/AuthSlice';
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import ProductSlice from "./reducers/ProductSlice";
 import ProductBasket from "./reducers/ProductBasket";
