@@ -38,7 +38,7 @@ const ProductList = () => {
                                 </div>
                                 <div className="productlist-card">
                                     <img src={kids} alt=""/>
-                                    <p>For kids</p>
+                                    <p>for kids</p>
                                 </div>
                             </div>
                         </div>
