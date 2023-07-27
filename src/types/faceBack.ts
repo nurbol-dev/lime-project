@@ -7,6 +7,6 @@ export interface dataTypes {
     category: string,
     price: number,
     image: string | undefined,
-    quantity?: string | number | undefined | any
+    quantity?:  any
     kg: number | string
 }
