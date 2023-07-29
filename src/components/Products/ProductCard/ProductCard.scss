@@ -1,5 +1,6 @@
 .card {
   &--group {
+    cursor: pointer;
     width: 265px;
     margin: 20px;
     height: 340px;
@@ -28,8 +29,8 @@
     }
 
     &__fav {
-      width: 23.425px;
       cursor: pointer;
+      width: 23.425px;
       height: 23.248px;
       transform: translate(100px, 10px);
     }
