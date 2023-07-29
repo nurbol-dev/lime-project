@@ -11,13 +11,12 @@
   height: 464px;
   border-radius: 10px;
   z-index: 99;
- 
   h1 {
     cursor: pointer;
     position: absolute;
     top: 5px;
     right: 40px;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 250;
   }
   &--top {
@@ -25,10 +24,12 @@
     height: 80px;
     background: linear-gradient(80deg, #28b446, #02ff70) left;
     font-weight: 600;
-    text-align: center;
     color: white;
     font-size: 20px;
     border-radius: 10px;
+    &:hover {
+      background: linear-gradient(16deg, #28b446, #02ff70) right;
+    }
   }
   &--bottom {
     margin-top: 40px;
@@ -36,10 +37,12 @@
     height: 80px;
     background: linear-gradient(80deg, #28b446, #02ff70) left;
     font-weight: 600;
-    text-align: center;
     color: white;
     font-size: 20px;
     border-radius: 10px;
+    &:hover {
+      background: linear-gradient(16deg, #28b446, #02ff70) right;
+    }
   }
 }
 .bg-modal {
