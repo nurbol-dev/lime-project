@@ -7,7 +7,6 @@ import {useAppDispatch, useAppSelector} from "../../../hooks";
 import {detailsProductREC, productModalREC} from "../../../store/actions/ProductActions";
 import {addToBasketREC, testREC} from "../../../store/actions/ProductBasket";
 import {getFavorite} from "../../../store/actions/ProductFavoriteActions";
-import BasketREC from "../ProductDetails";
 
 interface card {
     el: dataTypes
@@ -25,11 +24,12 @@ const ProductCard = ({el}: card) => {
         <div className="card">
             <div className="container">
                     <div className="card--group">
-                        <MdOutlineFavoriteBorder style={{color: found ? "red" : ""}} onClick={() => dispatch(getFavorite(el))} className="card--group__fav"/>
+                        <MdFavorite style={{color: found ? "red" : ""}} onClick={() => dispatch(getFavorite(el))} className="card--group__fav"/>
                         <div className="card">
                             <img src={el.image} alt="img" onClick={() => {
                                 detailPr()
                                 dispatch(productModalREC(productModal))
+                                dispatch(testREC(el.id))
                             }}/>
                             <h5>{el.price}c</h5>
                             <h1>{el.name_en}</h1>

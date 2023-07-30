@@ -7,6 +7,7 @@ import "./Product.scss"
 import Slider from "react-slick";
 import banner from "../../assets/img/image 33.png"
 import ProductDetails from "./ProductDetails/ProductDetails";
+import {IoSearchSharp} from "react-icons/io5";
 
 const Products = () => {
     const {basket} = useAppSelector(s => s.ProductBasket)
@@ -31,6 +32,10 @@ const Products = () => {
             <ProductDetails/>
             <div className="blur" onClick={() => dispatch(productModalREC(productModal))}
                  style={{display: productModal ? "flex" : "none"}}></div>
+            <div className="mainInput" >
+                <IoSearchSharp className="mainInput--icon"/>
+                <input type="text" placeholder="What would you like to buy..."/>
+            </div>
             <div className="container">
                 <div>
                     <Slider {...settings}>
