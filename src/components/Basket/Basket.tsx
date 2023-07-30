@@ -35,8 +35,8 @@ const Basket = () => {
             <SlBasket className='header-nav-icon' onClick={() => dispatch(upDateBasketREC(!basketModal))}/>
             <div hidden={basketModal}>
                 <div className="container">
-                    <div className="bac-blur" style={{display: basketModal || basket.length === 0 ? "none" : ""}} onClick={() => dispatch(upDateBasketREC(!basketModal))}></div>
-                    <div className="baskets" style={{display: basket.length === 0 ? "none" : ""}}>
+                    <div className="bac-blur"  onClick={() => dispatch(upDateBasketREC(!basketModal))}></div>
+                    <div className="baskets" >
                        <div className="v">
                            <div className="baskets--nav">
                                <BsArrowLeft onClick={() => dispatch(upDateBasketREC(!basketModal))} className="baskets--nav--array"/>
@@ -92,7 +92,7 @@ const Basket = () => {
                             <button onClick={() => {
                                 upDates()
                                 upDateBas()
-                            }} className="btnBasket">Checkout</button>
+                            }} className="btnBasket" style={{display: basket.length === 0 ? "none" : "flex"}}>Checkout</button>
                         </div>
                     </div>
                 </div>
