@@ -18,3 +18,38 @@
   border: none;
   border-radius: 5px;
 }
+.mainInput {
+  transform: translate(0 , 30px);
+  display: flex;
+  margin: 0 0 80px 140px;
+  width: 521px;
+  height: 60px;
+  padding: 2px 32px 2px 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  background: var(--color-white, #FFF);
+  &--icon {
+    width: 32px;
+    height: 32px;
+    color: #6CC51D;
+  }
+  input {
+    font-size: 24px;
+    &::placeholder {
+      color: #A098AE;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+.slick-slide {
+  position: relative;
+  left: -114px;
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}

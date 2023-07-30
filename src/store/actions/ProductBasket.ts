@@ -1,6 +1,6 @@
 import {dataTypes} from "../../types/faceBack";
 import {appDispatch} from "../index";
-import {addToBasket, tests, upDateBasket} from "../reducers/ProductBasket";
+import {addToBasket, decrimentBasket, deleteBasket, tests, upDateBasket, upDateCheck} from "../reducers/ProductBasket";
 
 export const addToBasketREC = (el: dataTypes | any) => (dispatch: appDispatch) => {
     dispatch(addToBasket(el))
@@ -13,4 +13,16 @@ export const upDateBasketREC = (el: any) => (dispatch: appDispatch) => {
 
 export const testREC = (el: any) => (dispatch: appDispatch) => {
     dispatch(tests(el))
+}
+
+export const delBasketREC = (el: any) => (dispatch: appDispatch) => {
+    dispatch(deleteBasket(el))
+}
+
+export const upDateCheckREC = (el: any) => (dispatch: appDispatch) => {
+    dispatch(upDateCheck(el))
+}
+
+export const decBasketREC = (el: any) => (dispatch: appDispatch) => {
+    dispatch(decrimentBasket(el))
 }
