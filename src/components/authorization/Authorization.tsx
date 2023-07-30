@@ -30,8 +30,8 @@ const Authorization = () => {
             
             <h1 onClick={backReturn}>&times;</h1>
             <div>
-              <button onClick={() => setSign(true)} className="modal--top">
-                Sign up
+              <button onClick={() => setSign(true)} className="modal--top  ">
+               <span> Sign up</span>
               </button>
             </div>
             <div>

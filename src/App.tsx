@@ -11,6 +11,8 @@ function App() {
     return (
         <div className="App">
             <Header/>
+            {/* <Authorization/> */}
+            <Products/>
             <Routes>
                 <Route path={"/"} element={<Products/>}/>
                 <Route path={"/authorization"} element={<Authorization/>}/>
