@@ -1,0 +1,81 @@
+.CouHeader {
+  width: 150px;
+  height: 769px;
+  background: #28B446;
+  padding: 30px 60px;
+  img {
+    margin: 0 0 50px 0;
+  }
+  &--logOut {
+    display: flex;
+    color: #FEFFFE;
+    margin: 100px 0 0 0;
+    cursor: pointer;
+    h1 {
+      margin: 0 15px;
+      color: #FEFFFE;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 133.333% */
+      letter-spacing: -0.1px;
+    }
+  }
+  &--child {
+    display: flex;
+    color: #FEFFFE;
+    margin: 30px 0 0 0;
+    cursor: pointer;
+    &:hover {
+      padding: 8px 16px;
+      align-items: center;
+      border-radius: 8px;
+      color: #6CC51D;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: -0.1px;
+      background: #FFF;
+    }
+    h1 {
+      margin: 0 15px;
+      color: #FEFFFE;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 133.333% */
+      letter-spacing: -0.1px;
+    }
+  }
+}
+
+.profilesHeader {
+  &--nav {
+    display: flex;
+    align-items: center;
+    width: 399px;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #EBEBEB;
+    background: #FDFDFD;
+    &__icon {
+      fill: #A4A4A4;
+      font-size: 25px;
+    }
+    input {
+      color: #969BA0;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-size: 16px;
+      &::placeholder {
+        color: #969BA0;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

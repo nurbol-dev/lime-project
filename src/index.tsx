@@ -7,11 +7,14 @@ import {setUpStore} from "./store";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {BrowserRouter} from "react-router-dom";
+import Layout from "./layout";
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <Provider store={setUpStore()}>
        <BrowserRouter>
-           <App/>
+          <Layout>
+              <App/>
+          </Layout>
        </BrowserRouter>
     </Provider>
 );
