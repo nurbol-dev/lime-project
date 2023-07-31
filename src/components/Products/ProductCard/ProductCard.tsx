@@ -7,7 +7,7 @@ import {useAppDispatch, useAppSelector} from "../../../hooks";
 import {detailsProductREC, productModalREC} from "../../../store/actions/ProductActions";
 import {addToBasketREC, testREC} from "../../../store/actions/ProductBasket";
 import {getFavorite} from "../../../store/actions/ProductFavoriteActions";
-import BasketREC from "../ProductDetails";
+// import BasketREC from "../ProductDetails";
 
 interface card {
     el: dataTypes

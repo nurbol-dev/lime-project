@@ -10,14 +10,16 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            {/* <Authorization/> */}
+            <Authorization/> 
             <Products/>
             <Routes>
                 <Route path={"/"} element={<Products/>}/>
                 <Route path={"/authorization"} element={<Authorization/>}/>
             </Routes>
-            <ProductList/>
+            {/* <ProductList/> */}
         </div>
+
+      
     );
 }
 

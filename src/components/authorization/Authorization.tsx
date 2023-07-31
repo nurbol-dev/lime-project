@@ -27,10 +27,11 @@ const Authorization = () => {
             display: back ? "none" : "block",
           }}>
           <div className="modal">
-            
             <h1 onClick={backReturn}>&times;</h1>
             <div>
-              <button onClick={() => setSign(true)} className="modal--top  ">
+              <button style={{
+                background: login ? "#28B446" : sign ? "#28B446" : ""
+              }} onClick={() => setSign(true)} className="modal--top  ">
                <span> Sign up</span>
               </button>
             </div>

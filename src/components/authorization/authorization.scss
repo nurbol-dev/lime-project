@@ -28,7 +28,7 @@
     font-size: 20px;
     border-radius: 10px;
     &:hover {
-      background: linear-gradient(16deg, #28b446, #02ff70) right;
+      background: #02ff70;
     }
   }
   &--bottom {
@@ -41,7 +41,7 @@
     font-size: 20px;
     border-radius: 10px;
     &:hover {
-      background: linear-gradient(16deg, #28b446, #02ff70) right;
+      background: #02ff70;
     }
   }
 }
@@ -51,4 +51,3 @@
   inset: 0;
   z-index: 98;
 }
-
