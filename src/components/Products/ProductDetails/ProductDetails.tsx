@@ -13,7 +13,7 @@ const ProductDetails = () => {
     const dispatch = useAppDispatch()
     const {favorite} = useAppSelector(s => s.ProductFavorite)
     const found = favorite.some(some => some.id === productsDetails.id)
-
+    const {basket,test} = useAppSelector(s => s.ProductBasket)
 
     return (
         <div style={{display: productModal ? "flex" : "none"}}>
@@ -40,8 +40,26 @@ const ProductDetails = () => {
                             <span>quantity</span>
                             <div className="details--text__quantity--btn">
                                 <div>-</div>
-                                <h2>{productsDetails.quantity}</h2>
-                                <div>+</div>
+                                <h2>
+                                    {
+                                        basket.length === 0 ? 1 :
+                                        basket.map(el =>
+                                            <>
+                                                {
+                                                    el.id === test ?
+                                                        <div>
+                                                            {
+                                                                el.quantity
+                                                            }
+                                                        </div>
+                                                        :
+                                                        <div></div>
+                                                }
+                                            </>
+                                        )
+                                    }
+                                </h2>
+                                <div style={{cursor: "pointer"}} onClick={() => dispatch(addToBasketREC(productsDetails))}>+</div>
                             </div>
                         </div>
                         <button onClick={() => dispatch(addToBasketREC(productsDetails))}><SlBasket/>Add to cart</button>

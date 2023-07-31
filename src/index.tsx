@@ -9,14 +9,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BrowserRouter } from "react-router-dom";
 import Products from "./components/Products/Products";
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
+
+import {BrowserRouter} from "react-router-dom";
+import Layout from "./layout";
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
-  <Provider store={setUpStore()}>
-    <BrowserRouter>
-      <App />
-    
-    </BrowserRouter>
-  </Provider>
+    <Provider store={setUpStore()}>
+       <BrowserRouter>
+          <Layout>
+              <App/>
+          </Layout>
+       </BrowserRouter>
+    </Provider>
 );

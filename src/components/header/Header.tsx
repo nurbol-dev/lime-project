@@ -9,6 +9,7 @@ import {GoPerson} from "react-icons/go";
 import Basket from "../Basket/Basket";
 import {useAppDispatch, useAppSelector} from "../../hooks";
 import {getProductCard} from "../../store/reducers/ProductSlice";
+import ProductList from "../product-list/ProductList";
 
 
 const Header = () => {
@@ -42,6 +43,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            <ProductList/>
         </>
 
     );
