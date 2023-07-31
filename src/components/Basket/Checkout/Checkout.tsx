@@ -15,15 +15,11 @@ const Checkout = () => {
     const dispatch = useAppDispatch()
     const upDates = () => dispatch(upDateCheckREC(!checkoutModal))
     const upDateBas = () => dispatch(upDateBasketREC(!basketModal))
+
     const countBas =  basket.reduce((acc, el) => {
         return acc * el.quantity + el.price
     }, 0)
-    const countBtn =  basket.reduce((acc, el) => {
-        return acc * el.quantity + el.price / 50
-    }, 0)
-    const countStr =  basket.reduce((acc, el) => {
-        return acc * el.quantity + el.price - 50
-    }, 0)
+
 
 
     const handleCash = (e: any) => {
@@ -137,8 +133,8 @@ const Checkout = () => {
                                     <h1>Shipping charges</h1>
                                 </div>
                                 <div className="finBas--count">
-                                    <p>{Math.floor(countStr)}c</p>
-                                    <p>{Math.floor(countBtn)}c</p>
+                                    <p>{Math.floor(countBas - 50)}c</p>
+                                    <p>{Math.floor(countBas / 50)}c</p>
                                 </div>
                             </div>
                             <div className="total" style={{display: basket.length === 0 ? "none" : "flex"}}>

@@ -1,0 +1,46 @@
+.adminModal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  &--nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--icon {
+      font-size: 25px;
+      cursor: pointer;
+      transform: translate(530px , -160px );
+    }
+    &__block {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 600px;
+      height: 474px;
+      border-radius: 10px;
+      background: #FFF;
+      border: 1px solid black;
+
+      button {
+        width: 510.79px;
+        height: 80.651px;
+        background: linear-gradient(141deg, #28B446 1.40%, #02FF70 100%);
+        filter: drop-shadow(0px 13.4418306350708px 12.097647666931152px rgba(108, 197, 29, 0.25));
+        color: #FFF;
+        text-align: center;
+        font-size: 20.163px;
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      img {
+
+      }
+    }
+  }
+}

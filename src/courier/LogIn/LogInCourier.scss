@@ -1,0 +1,58 @@
+.navbarL {
+  &--nav {
+    margin: 200px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__log {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        color: #000;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        margin: 20px 0;
+        line-height: normal;
+      }
+      input {
+        margin: 10px 0;
+        display: flex;
+        width: 343px;
+        padding: 12px 10px;
+        align-items: center;
+        border-radius: 10px;
+        color: #878585;
+        &::placeholder {
+          color: #878585;
+          font-weight: 400;
+          line-height: normal;
+        }
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: 1px solid #6CC51D;
+        gap: 10px;
+      }
+      button {
+        margin: 20px 0;
+        color: #FFF;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        width: 343px;
+        padding: 12px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: #28B446;
+      }
+    }
+  }
+}

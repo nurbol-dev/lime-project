@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import banner from "../../assets/img/image 33.png"
 import ProductDetails from "./ProductDetails/ProductDetails";
 import {IoSearchSharp} from "react-icons/io5";
+import Checkout from "../Basket/Checkout/Checkout";
 
 const Products = () => {
     const {basket} = useAppSelector(s => s.ProductBasket)
